@@ -1,0 +1,233 @@
+/* =========================
+   전체
+========================= */
+body{
+    margin:0;
+    padding:20px;
+    font-family:'Segoe UI', sans-serif;
+    background:#f5f5f5;
+    color:#000;
+}
+
+.main-wrap{
+    max-width:1000px;
+    margin:0 auto;
+    background:#fff;
+    border:1px solid #000;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   링크
+========================= */
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   제목 영역
+========================= */
+h1{
+    margin-top:0;
+    border-bottom:2px solid #000;
+    padding-bottom:8px;
+}
+
+h2{
+    margin:10px 0;
+}
+
+/* =========================
+   본문
+========================= */
+.article-content{
+    line-height:1.8;
+    margin-top:15px;
+}
+
+/* 이미지 */
+.article-img{
+    max-width:100%;
+    border:1px solid #000;
+    border-radius:8px;
+    margin:8px 0;
+}
+
+/* =========================
+   버튼 (검흰 통일)
+========================= */
+button,
+input[type="button"],
+input[type="submit"]{
+    border:1px solid #000;
+    background:#fff;
+    color:#000;
+    padding:6px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.2s;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover{
+    background:#000;
+    color:#fff;
+}
+
+/* =========================
+   댓글 영역
+========================= */
+.comment-box{
+    border:1px solid #000;
+    margin:10px 0;
+    padding:10px;
+    border-radius:8px;
+    background:#fff;
+}
+
+textarea{
+    width:100%;
+    box-sizing:border-box;
+    border:1px solid #000;
+    border-radius:6px;
+    padding:8px;
+    resize:vertical;
+}
+
+/* =========================
+   테이블 (게시판 목록)
+========================= */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    margin-top:10px;
+}
+
+th, td{
+    border:1px solid #000;
+    padding:8px;
+    text-align:center;
+}
+
+th{
+    background:#f2f2f2;
+}
+
+tr:hover{
+    background:#f7f7f7;
+}
+
+/* 공지 */
+tr[style*="background:#fff7e6"]{
+    background:#e5e5e5 !important;
+}
+
+/* =========================
+   페이징
+========================= */
+.paging{
+    margin-top:15px;
+    text-align:center;
+}
+
+.paging a,
+.paging b{
+    display:inline-block;
+    min-width:30px;
+    padding:5px 8px;
+    margin:0 3px;
+    border:1px solid #000;
+    border-radius:5px;
+}
+
+.paging a{
+    background:#fff;
+    color:#000;
+}
+
+.paging a:hover{
+    background:#000;
+    color:#fff;
+}
+
+.paging b{
+    background:#000;
+    color:#fff;
+}
+
+/* =========================
+   상단바
+========================= */
+.header-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: none; /* 테두리 제거 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 원하면 그림자 추가 */
+}
+
+/* 로고 */
+.header-bar .logo {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 오른쪽 메뉴/버튼 영역 */
+.header-bar .menu input[type="button"] {
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    margin-left: 10px;
+}
+
+.header-bar .menu input[type="button"]:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* 기존 .header-bar .menu input[type="button"]는 그대로 두고,
+   마이페이지/로그아웃 전용 클래스 추가 */
+.header-bar .menu input.mypage-btn,
+.header-bar .menu input.logout-btn {
+    border: none !important; /* 테두리 제거 */
+    background: #fff;
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    margin-left: 10px;
+}
+
+.header-bar .menu input.mypage-btn:hover,
+.header-bar .menu input.logout-btn:hover {
+    background: #000;
+    color: #fff;
+}
+

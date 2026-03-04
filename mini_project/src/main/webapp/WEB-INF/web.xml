@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+    http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+    version="4.0">
+
+    <display-name>mini_project</display-name>
+
+    <!-- 인코딩 필터 -->
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>web.setting.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- 404 에러 -->
+    <error-page>
+    <error-code>404</error-code>
+    <location>/error/http404.jsp</location>
+	</error-page>
+
+	<!-- 500 에러 -->
+	<error-page>
+	    <error-code>500</error-code>
+	    <location>/error/http500.jsp</location>
+	</error-page>
+	
+	<!-- 그 외 모든 예외 -->
+	<error-page>
+	    <exception-type>java.lang.Throwable</exception-type>
+	    <location>/error/error.jsp</location>
+	</error-page>
+
+</web-app>

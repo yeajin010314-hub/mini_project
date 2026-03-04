@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+/* =========================
+   공통
+========================= */
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    color:#000;
+}
+
+/* =========================
+   상단바
+========================= */
+.topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 30px;
+    background:#fff;
+    border-bottom:1px solid #000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    text-decoration:none;
+    color:#000;
+}
+
+/* =========================
+   메인 박스
+========================= */
+.main{
+    max-width:480px;
+    margin:60px auto;
+    background:#fff;
+    padding:40px;
+    border:1px solid #000;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   제목
+========================= */
+.title{
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+/* =========================
+   폼
+========================= */
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:6px;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* =========================
+   입력 요소
+========================= */
+.form-group input,
+.form-group select{
+    width:100%;
+    padding:12px;
+    font-size:14px;
+    border-radius:8px;
+    border:1px solid #000;
+    outline:none;
+    background:#fff;
+    color:#000;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    background:#fff;
+    border:1px solid #000;
+}
+
+/* =========================
+   아이디
+========================= */
+.id-wrap{
+    display:flex;
+    gap:8px;
+}
+
+.id-wrap button{
+    width:90px;
+    border:1px solid #000;
+    background:#fff;
+    color:#000;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.id-wrap button:hover{
+    background:#000;
+    color:#fff;
+}
+
+.msg{
+    margin-top:6px;
+    font-size:13px;
+}
+
+/* =========================
+   생년월일
+========================= */
+.birth-wrap input[type="date"]{
+    width:100%;
+    padding:12px;
+    font-size:14px;
+    border-radius:8px;
+    border:1px solid #000;
+    background:#fff;
+    cursor:pointer;
+}
+
+/* =========================
+   이메일
+========================= */
+.email-wrap{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.email-wrap input{
+    flex:1;
+}
+
+.email-wrap select{
+    width:140px;
+}
+
+/* 필수 */
+.required{
+    color:#000;
+    font-weight:bold;
+    margin-left:2px;
+}
+
+/* =========================
+   가입 버튼 (검흰)
+========================= */
+.submit-btn{
+    width:100%;
+    padding:14px;
+    font-size:16px;
+    border:1px solid #000;
+    border-radius:8px;
+    cursor:pointer;
+    background:#fff;
+    color:#000;
+    margin-top:10px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.submit-btn:hover{
+    background:#000;
+    color:#fff;
+}
+
+/* =========================
+   하단
+========================= */
+.bottom-text{
+    text-align:center;
+    margin-top:18px;
+    font-size:14px;
+}
+
+.bottom-text a{
+    text-decoration:none;
+    color:#000;
+    font-weight:bold;
+}
+
+.bottom-text a:hover{
+    text-decoration:underline;
+}

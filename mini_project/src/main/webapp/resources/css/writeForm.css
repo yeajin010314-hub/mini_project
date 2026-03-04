@@ -1,0 +1,108 @@
+/* =========================
+   전체
+========================= */
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:#f5f5f5;
+    color:#000;
+}
+
+/* =========================
+   폼 컨테이너
+========================= */
+form{
+    max-width:900px;
+    margin:40px auto;
+    background:#fff;
+    border:1px solid #000;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   제목
+========================= */
+title{
+    font-weight:bold;
+}
+
+/* =========================
+   입력 요소
+========================= */
+input[type="text"],
+select,
+textarea{
+    width:100%;
+    box-sizing:border-box;
+    padding:10px;
+    margin-top:6px;
+    margin-bottom:15px;
+    border:1px solid #000;
+    border-radius:6px;
+    background:#fff;
+    color:#000;
+    font-size:14px;
+}
+
+/* textarea */
+textarea{
+    resize:vertical;
+    min-height:220px;
+}
+
+/* 파일 업로드 */
+input[type="file"]{
+    margin-bottom:10px;
+}
+
+/* =========================
+   버튼 (검흰 통일)
+========================= */
+input[type="button"],
+input[type="submit"]{
+    border:1px solid #000;
+    background:#fff;
+    color:#000;
+    padding:8px 14px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+    margin-right:6px;
+    transition:0.2s;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover{
+    background:#000;
+    color:#fff;
+}
+
+/* =========================
+   섹션 간격
+========================= */
+form br{
+    line-height:1.8;
+}
+
+/* =========================
+   라벨 느낌 강화
+========================= */
+form{
+    line-height:1.6;
+    font-size:14px;
+    font-weight:500;
+}
+.btn-area{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+}
+
+.btn-left,
+.btn-right{
+    display:flex;
+    gap:8px;
+}
