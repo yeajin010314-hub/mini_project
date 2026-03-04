@@ -12,7 +12,7 @@
 참여 인원
 3명 (팀 프로젝트)
 
-● 담당 역할
+담당 역할
 - 회원가입 및 로그인 기능 구현
 - Servlet 기반 요청 처리 로직 구현
 - 세션(Session) 기반 인증 및 권한 검증 로직 구현
@@ -20,7 +20,7 @@
 - 서버단 접근 제어 및 예외 처리 구현
 - 일부 DAO 및 DB 연동 로직 구현
 
-● 기술 스택 (Tech Stack)
+기술 스택 (Tech Stack)
 - Backend
 - Java
 - JSP / Servlet
@@ -30,12 +30,12 @@
 - CSS
 - JavaScript
 
-● Tool
+Tool
 - Eclipse 4.38.0
 - SQL Developer 24.3.1
 - Apache Tomcat 9.0.113
 
-● 주요 기능 (Features)
+주요 기능 (Features)
 1. 회원 관리 기능
 - 회원가입 기능 구현 및 입력 데이터 검증 처리
 - 로그인 기능 구현 (세션 기반 인증 처리)
@@ -64,19 +64,19 @@
 본 프로젝트는 MVC(Model-View-Controller) 패턴 기반 구조로 설계되었습니다.
 Controller, DAO, View의 역할을 분리하여 요청 처리 흐름을 명확히 하고 유지보수성을 고려하여 구현했습니다.
 
-●Controller (Servlet)
+Controller (Servlet)
 - 클라이언트 요청 URL 매핑 및 요청 처리
 - 요청 파라미터 수집
 - DAO 호출 및 비즈니스 로직 처리
 - 세션 기반 로그인 상태 및 권한 검증
 - 처리 결과를 JSP(View)로 전달
 
-●DAO (Data Access Object)
+DAO (Data Access Object)
 - Oracle DB 접근 및 SQL 실행
 - 회원 데이터 조회 및 저장 처리
 - 데이터 접근 로직 분리
 
-●View (JSP)
+View (JSP)
 - EL 및 JSTL을 활용한 데이터 출력
 - 로그인 상태에 따른 UI 분기 처리
 - 사용자 권한에 따른 기능 표시 제어
